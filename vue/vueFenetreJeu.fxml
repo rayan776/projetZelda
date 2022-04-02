@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bordPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controleur.ControleurFenetreJeu">
+   <center>
+      <Pane prefHeight="1049.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="boutonUrlMap" focusTraversable="false" layoutX="214.0" layoutY="853.0" mnemonicParsing="false" onAction="#choisirMap" prefHeight="134.0" prefWidth="423.0" text="Choisir une map">
+               <font>
+                  <Font size="42.0" />
+               </font></Button>
+            <Pane fx:id="panneauSup" focusTraversable="true" layoutX="150.0" layoutY="100.0" prefHeight="523.0" prefWidth="918.0">
+               <children>
+                  <TilePane fx:id="tilePane" prefHeight="523.0" prefWidth="909.0" />
+               </children>
+            </Pane>
+            <Label layoutX="977.0" layoutY="14.0" text="Jeu d'aventure" textFill="BLACK">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Pane fx:id="coeurs" layoutX="190.0" layoutY="18.0" prefHeight="71.0" prefWidth="954.0" />
+            <TextArea fx:id="dernieresNews" visible="false" editable="false" focusTraversable="false" layoutX="750.0" layoutY="853.0" prefHeight="142.0" prefWidth="394.0">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="dernieresNewsLbl" visible="false" focusTraversable="false" layoutX="842.0" layoutY="817.0" text="Dernières nouvelles" textFill="WHITE">
+           		<font>
+           			<Font size="21.0" />
+           		</font>
+            </Label>
+            <ProgressBar fx:id="barrePvEau" layoutX="24.0" layoutY="113.0" prefHeight="20.0" prefWidth="133.0" progress="1.0" style="-fx-accent: blue;" visible="false" />
+            <VBox layoutX="1080.0" layoutY="200.0" prefHeight="594.0" prefWidth="100.0">
+               <children>
+                  <Pane fx:id="inventairePane" prefHeight="748.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: blue;" visible="false">
+                     <children>
+                        <ProgressBar fx:id="bouclierProgressBar" layoutX="16.0" layoutY="538.0" prefHeight="20.0" prefWidth="70.0" progress="0.0" style="-fx-accent: green;" />
+                        <ImageView fitHeight="84.0" fitWidth="79.0" layoutX="12.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/bouclierInventaire.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+               </children>
+            </VBox>
+            <ImageView fx:id="imgGoutteEau" fitHeight="90.0" fitWidth="157.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/goutteEau.png" />
+               </image>
+            </ImageView>
+            <VBox fx:id="scoreTimeBox" layoutX="988.0" layoutY="73.0" prefHeight="100.0" prefWidth="131.0" style="-fx-border-color: blue;" visible="false">
+               <children>
+                  <Label fx:id="timeText" text="00:00" textFill="BLACK" translateX="20.0">
+                  	<font>
+                  		<Font size="30.0" />
+                  	</font>
+                  </Label>
+                  <Label text="Score :" translateX="10.0" textFill="BLACK" translateY="30.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scoreLabel" prefHeight="21.0" prefWidth="55.0" textFill="BLACK" translateX="80.0" translateY="10.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

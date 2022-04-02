@@ -1,0 +1,35 @@
+#bordPane{
+    -fx-background-image: url("/application/resources/bg.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 800 400;
+    -fx-background-position: center center;
+}
+
+.button{
+	-fx-border-color:grey;
+	-fx-background-color: transparent;
+	-fx-border-width: 4 4 4 4;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+}
+
+#buttonQuit {
+	-fx-background-color: red;
+	-fx-text-fill: white;
+	-fx-border-width: 1 1 1 1;
+}
+
+#buttonQuit:hover {
+	-fx-background-color: white;
+	-fx-text-fill: red;
+}
+
+.button:hover {
+	-fx-background-color: darkblue;
+	-fx-text-fill: white;
+}
+
+.button:pressed {
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+}

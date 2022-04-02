@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controleur.ReglesControleur">
+   <top>
+      <VBox prefHeight="650.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Jeu d'aventure : règles" textFill="WHITE" translateX="120.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="reglesTextArea" editable="false" prefHeight="620.0" prefWidth="600.0">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin></TextArea>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

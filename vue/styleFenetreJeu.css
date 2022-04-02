@@ -1,0 +1,22 @@
+#bordPane{
+    -fx-background-image: url("/application/resources/bg.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1200 1050;
+    -fx-background-position: center center;
+}
+
+.button{
+	-fx-background-color: transparent;
+	-fx-border-width: 4 4 4 4;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+}
+.button:hover {
+	-fx-background-color: lightblue;
+	-fx-text-fill: darkblue;
+}
+
+.button:pressed {
+	-fx-background-color: white;
+	-fx-text-fill: darkblue;
+}

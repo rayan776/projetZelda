@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <center>
+      <Label style="-fx-background-color: black;" text="VOUS AVEZ PERDU !" textFill="RED" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>
